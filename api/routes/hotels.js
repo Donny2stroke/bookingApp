@@ -21,4 +21,4 @@ router.post("/", async (req, res) =>{
 //GET ALL
 
 
-export default router
+export default router 
