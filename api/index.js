@@ -23,6 +23,7 @@ mongoose.connection.on("disconnected", () =>{
 })
 
 //middlewares
+app.use(express.json()); //consente di accettare json
 app.use("/api/auth", authRoutes);
 app.use("/api/hotels", hotelsRoutes);
 app.use("/api/rooms", roomsRoutes);
