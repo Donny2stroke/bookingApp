@@ -17,6 +17,3 @@ router.get("/", getHotels);
 
 
 export default router 
-
-
-340 945 2787
