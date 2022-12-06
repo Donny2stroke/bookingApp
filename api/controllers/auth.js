@@ -1,4 +1,4 @@
-import User from "../models/User";
+import User from "../models/User.js";
 
 export const register = async (req, res, next) => {
     try {
@@ -7,6 +7,8 @@ export const register = async (req, res, next) => {
             email: req.body.email,
             password: req.body.password,
         })
+        await newUser.save();
+        res.status(201).send("Utente creato")
     } catch (error) {
         next(error);
     }
