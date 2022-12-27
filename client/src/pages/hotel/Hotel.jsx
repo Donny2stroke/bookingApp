@@ -138,8 +138,7 @@ const Hotel = () => {
                 <div className="hotelDetailsPrice">
                   <h1>Perfetto per soggiornare {days} {days==1 ? ("giorno") : ("giorni")}</h1>
                   <span>
-                    Located in the real heart of Krakow, this property has an
-                    excellent location score of 9.8!
+                    Situata in {data.address}, la struttura {data.name} è disponibile per essere prenotata
                   </span>
                   <h2>
                     <b>€{days * data.cheapestPrice * options.room}</b> ({days} {days==1 ? ("giorno") : ("giorni")})
